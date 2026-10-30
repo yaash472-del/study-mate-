@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyMate AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">✦ StudyMate<span> AI</span></div>
+
+    <p class="menu-label">MENU</p>
+
+    <nav>
+      <a class="active" href="#dashboard">⌂ Dashboard</a>
+      <a href="#notes">▤ AI Notes</a>
+      <a href="#tutor">✧ AI Tutor</a>
+      <a href="#quiz">▣ Quiz Generator</a>
+      <a href="#planner">◷ Study Planner</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <p>YOUR STUDY SPACE</p>
+      <h4>Learn smarter, not harder.</h4>
+      <span>Powered by Gemini AI</span>
+    </div>
+  </aside>
+
+  <main class="main" id="dashboard">
+
+    <header class="topbar">
+      <div>
+        <p class="muted">YOUR PERSONAL LEARNING SPACE</p>
+        <h2>Welcome to StudyMate <span>✦</span></h2>
+      </div>
+      <div class="profile">S</div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <span class="tag">✦ AI POWERED LEARNING</span>
+        <h1>Study smarter.<br>
+          <span>Achieve more.</span>
+        </h1>
+        <p>Turn your study materials into easy notes and
+          understand every topic with AI.</p>
+        <a href="#notes" class="primary-btn">Generate Notes →</a>
+      </div>
+      <div class="hero-icon">✦</div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span>📚</span>
+        <p>Notes Created</p>
+        <h2 id="notesCount">0</h2>
+      </div>
+      <div class="stat-card">
+        <span>🧠</span>
+        <p>AI Features</p>
+        <h2>4+</h2>
+      </div>
+      <div class="stat-card">
+        <span>⚡</span>
+        <p>Learning Mode</p>
+        <h2>Active</h2>
+      </div>
+    </section>
+
+    <section class="section" id="notes">
+      <div class="section-heading">
+        <div>
+          <p class="muted">GEMINI AI</p>
+          <h2>Smart Notes Generator</h2>
+        </div>
+        <span class="tag">✦ AI FEATURE</span>
+      </div>
+
+      <div class="generator-card">
+        <label for="topic">Subject / Topic Name</label>
+        <input id="topic" type="text"
+          placeholder="Example: Machine Learning">
+
+        <label for="studyText">Paste your study material</label>
+        <textarea id="studyText"
+          placeholder="Paste your textbook content, class notes or study material here..."></textarea>
+
+        <div class="generator-options">
+          <div>
+            <label for="noteType">Notes format</label>
+            <select id="noteType">
+              <option value="Simple easy-to-understand notes">Easy Notes</option>
+              <option value="Short revision notes">Short Revision</option>
+              <option value="Detailed exam preparation notes">Detailed Notes</option>
+              <option value="Important definitions and key points">Key Points</option>
+            </select>
+          </div>
+
+          <button id="generateBtn" class="primary-btn">
+            ✦ Generate My Notes
+          </button>
+        </div>
+
+        <p class="status" id="status"></p>
+
+        <div id="resultBox" class="result-box" hidden>
+          <div class="result-heading">
+            <h3>✦ Your AI Study Notes</h3>
+            <button id="copyBtn" class="secondary-btn">Copy Notes</button>
+          </div>
+          <div id="notesResult" class="notes-result"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tutor">
+      <h2>Explore AI Learning</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span>🧠</span>
+          <h3>AI Tutor</h3>
+          <p>Understand difficult topics in simple language.</p>
+        </div>
+        <div class="feature-card" id="quiz">
+          <span>📝</span>
+          <h3>Quiz Generator</h3>
+          <p>Practice questions based on your study materials.</p>
+        </div>
+        <div class="feature-card" id="planner">
+          <span>📅</span>
+          <h3>Study Planner</h3>
+          <p>Organize your study time and exam preparation.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>StudyMate AI © 2026 | Learn. Understand. Achieve.</footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
